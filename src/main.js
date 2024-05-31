@@ -16,6 +16,8 @@ Vue.config.login_flag = false;
 Vue.component('footer-copyright', {
   template: '<p class="footer-msg">版权信息</p>'
 });
+// 自定义全局样式
+import './styles/index.scss'
 // http
 Vue.prototype.$http = http;
 http.beforeRequest = function (config) {
