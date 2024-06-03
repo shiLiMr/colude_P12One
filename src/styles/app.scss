@@ -1,15 +1,31 @@
-.el-input__inner:hover{
+.el-input__inner:hover {
   border-color: #409eff !important;
 }
-.el-range-editor.el-input__inner{
+.el-range-editor.el-input__inner {
   width: 110%;
 }
-.el-form-item__content{
+.el-form-item__content {
   display: flex;
   width: 54%;
 }
 .layout-main {
   width: calc(100vw - 219px);
   height: calc(100vh - 60px);
+}
+
+.el-table__body tr:hover>td {
+
+  background-color: #f2e8da !important;
 
 }
+.el-table__body tr.current-row>td {
+
+  color: rgb(28, 235, 211);
+  background: rgb(123, 155, 233) !important;
+}
+.hr {
+  height: 2px;
+  background-color: #ccc;
+  margin: 20px -200px;
+}
+

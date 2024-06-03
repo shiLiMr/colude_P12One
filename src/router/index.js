@@ -64,6 +64,7 @@ let router = new Router({
           name: "Student", // 当前路由的name
           iconCls: "iconfont icon-home", // 图标样式class
           menuShow: true,
+          title: "   "+" 学员管理",
           children: [
             {
               path: "/user/student",
@@ -71,6 +72,13 @@ let router = new Router({
               title: "学员管理",
               menuShow: true,
             },
+            {
+              path: "/user/student-edit",
+              name:'userstudent-edit',
+              component: () => import("@/views/user/student/studentsadd.vue"),
+              title: "",
+              menuShow: false,
+            }
           ],
         },
         {
